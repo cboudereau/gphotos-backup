@@ -12,3 +12,8 @@ Content-Type: application/json
       "mylabel": "prod"
     }
 }"""
+
+let (</>) x y = System.IO.Path.Combine (x, y)
+
+let secret = __SOURCE_DIRECTORY__ </> "google-oauth2.secret" |> System.IO.File.ReadAllText 
+
