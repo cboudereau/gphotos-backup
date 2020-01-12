@@ -341,3 +341,6 @@ healthchecksdb
 
 # paket
 .paket/
+
+#secrets
+**/*.secret
